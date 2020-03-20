@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>BRD Sports</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.x/dist/aframe-look-at-component.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+    <link href="/media/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/media/images/Logo.jpeg">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="location">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Location</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <input id="back" type="image" src="/media/images/prev.png" class="location-btn-left"
+                            style="left: 0;"></input>
+                    </div>
+                    <div class="col-8">
+                        <h1 id="location"></h1>
+                    </div>
+                    <div class="col-2">
+                        <input id="next" type="image" src="/media/images/next.png" class="location-btn-right"
+                            style="right: 0;"></input>
+                    </div>
+                </div>
+
+            </div>
+            <nav class="navbar navbar-dark navbar-expand-lg">
+                <a href="index.html" class="navbar-brand nav-logo"><img class="nav-logo"
+                        src="/media/images/Logo.jpeg"></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapse_target">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-uppercase active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/root/about.php" class="nav-link text-uppercase">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-uppercase">Book Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/root/shop.php" class="nav-link text-uppercase">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-uppercase">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pano-360">
+            <div class="holder">
+                <a-scene id="sceneIdentifier" cursor="rayOrigin:mouse">
+                    
+                    <a-assets>
+                        <img id="image-360" src="/media/images/360IndexPembrey.jpg" crossorigin />
+                    </a-assets>
+
+                    <a-sky src="#image-360" id="rotate-360" rotation="0 -25 0" position="0 100 0"></a-sky>
+                   
+                    <a-entity id="camera" camera="" position="0 -1 0" wasd-controls="" rotation="0 0 0" look-controls="" aframe-injected="">
+                                            
+                    </a-entity>
+
+                </a-scene>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+
+<script src="/scripts/jquery.3.4.1.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+<script src="/scripts/index360.js"></script>
+
+</html>

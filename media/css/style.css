@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(224, 224, 224, 0.85);
+}
+
+/*---------------- NAVBAR ------------------*/
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    /* background-color: black; */
+    position: absolute;
+    z-index: 2;
+}
+
+ul li a {
+    font-family: 'Exo';
+    font-weight: 800;
+    color: rgba(255, 255, 255);
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 0 25px;
+    max-width: 100%;
+    font-size: 1.3em;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul li a.active {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.70);
+}
+
+ul li a:hover {
+    color: rgba(255, 255, 255, 0.80) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+}
+
+.nav-logo{
+    width: 175px;
+}
+
+.navbar-toggler{
+    margin: 5%;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255);
+    border-color: rgba(255,255,255);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+}
+
+/*---------------- NAVBAR ------------------
+----------------------------------------------
+---------------- 360Front ------------------*/
+
+.pano-360 {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    display: flex;
+    width: 100% !important;
+    height: 100% !important;
+    position: initial !important;
+    justify-content: start;
+}
+
+.holder {
+    max-width: 100% !important;
+    max-height: 100%;
+    margin: 0;
+}
+
+html.a-fullscreen .a-canvas {
+    width: 100%!important;
+    height: 100%!important;
+    position: unset;
+    overflow: hidden !important;
+}
+
+.location {
+    position: absolute;
+    padding-top: 1%;
+    right: 1.5%;
+    width: 20%;
+    max-width: 100%;
+    height: 10%;
+    max-height: 80%;
+    z-index: 3;
+}
+
+.location h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.2vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.location h3 {
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 1.0vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+
+.location-btn-left {
+    padding-top: 0;
+    width: unset;
+    height: 75%;
+    max-height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.location-btn-right {
+    padding-top: 0;
+    width: unset;
+    height: 75%;
+    max-height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.location-btn-left:focus{
+    outline: none;
+}
+.location-btn-right:focus{
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .location {
+        bottom: 6% !important;
+    }
+  }
+  
+@media (max-width:1112px) {
+    /* big landscape tablets, laptops, and desktops */
+    .location {
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 10%;
+        max-height: 80%;
+        z-index: 3;
+    }
+    .location h1 {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+    }
+    .location h3 {
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 1.0em;
+    }
+    .location-btn-right {
+        position: absolute;
+        height: 100%;
+        margin-right: 80%;
+        bottom: 5%;
+        z-index: 4;
+    }
+    .location-btn-left {
+        position: absolute;
+        height: 100%;
+        margin-left: 80%;
+        bottom: 5%;
+        z-index: 4;
+    }
+}
+@media (max-width:1348px){
+    ul li a {
+        font-size: 1.0em;
+    }
+} 
+/*---------------- 360Front ------------------*/
+
+/*----------------- Index-About Section ----------------*/
